@@ -74,7 +74,7 @@ class Venta(models.Model):
     id_venta = models.BigAutoField(primary_key=True, db_column='ID_VENAT')
     descripcion_venta = models.CharField(max_length=60,db_column='DESCRIPCION_VENTA')
     fecha = models.DateField(db_column='FECHA')
-    cantidad_venta = models.IntegerField(db_column='CANTIDAD_VENTA')
+    cantidad_venta = models.IntegerField(db_column='CANTIDAD_VENTA  ')
 
     producto = models.ForeignKey(Producto, on_delete=models.CASCADE, db_column='id_producto')
 
